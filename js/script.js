@@ -13,4 +13,9 @@ $(function() {
     }, wait);
   });
 
+  $("#map-link").click(function( event ){
+    event.preventDefault();
+    console.log("maplink clicked");
+  });
+
 });
