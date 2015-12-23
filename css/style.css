@@ -1,6 +1,43 @@
-body{
+body, html {
+  height: 100%;
   background-color: silver;
-  background-color: #3F2860;
+}
+
+.row {
+  height: 25%;
+}
+.column {
+  height: 100%;
+}
+
+.active-column {
+  color: red;
+  width: 100%;
+  z-index: 200;
+  background-color: white;
+}
+.lostfocus-column {
+  color: blue;
+}
+
+li {
+  list-style-type: none;
+  box-sizing: border-box;
+}
+li a {
+  font-size: 50px;
+  text-align: center;
+  display: block;
+  padding: 0;
+  background-color: rgba(0,0,0,0);
+  letter-spacing: 5px;
+  color: rgba(255,255,255,0.5);
+  transition: letter-spacing 6s;
+}
+li a:hover {
+  letter-spacing: 25px;
+  color: rgba(255,255,255,0.8);
+  transition: letter-spacing 2s;
 }
 
 header {
@@ -9,13 +46,12 @@ header {
 }
 
 section.content {
-  padding: 50px 0;
-  min-height:400px
-  background-color: red;
+  padding: 0 0;
+  min-height: 100%;
 }
 
 footer {
-  position: absolute;
+  position: fixed;
   background-color: rgba(255,255,255,0.2);
   color: rgba(0,0,0,0.3);
   padding: 0 2px 0 2px;
@@ -29,7 +65,7 @@ a {
   text-decoration: none;
 }
 
-nav.mainmenu a {
+nav.mainmen_ a {
   color: darkred;
   padding-right: 14px;
 }
@@ -78,4 +114,21 @@ nav li a {
 }
 .pull-left {
   float: left;
+}
+
+/*colors */
+.violet {
+  background-color: #3f2860;
+}
+.lime {
+  background-color: #90c5a9;
+}
+.dark-cyan {
+  background-color: #7a9a95;
+}
+.orange {
+  background-color: #ef6d3b;
+}
+.soft-orange {
+  background-color: #fa8b60
 }
