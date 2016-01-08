@@ -8,7 +8,7 @@ $(function() {
   });*/
 
   $(".circle").each(function(i){
-    var wait = 500 * (i+1);
+    var wait = 500 * (i + 1);
     setTimeout(function() {
       $(".circle").eq(i).addClass('open').animate({opacity:1}, i);
     }, wait);
@@ -29,5 +29,11 @@ $(function() {
 
   });
 
+  $(".avatar").each(function(i){
+    var wait = 500 * (i + 1);
+    setTimeout(function() {
+      $(".avatar").eq(i).addClass('visible').animate({opacity:1}, i);
+    }, wait);
+  });
 
 });

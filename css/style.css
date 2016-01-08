@@ -1,6 +1,6 @@
 body, html {
   height: 100%;
-  background-color: silver;
+  background-color: #3f2860;
 }
 
 .row {
@@ -96,10 +96,12 @@ nav li a {
 	overflow: hidden;
 	border-radius: 50%;
 	cursor: pointer;
-	box-shadow:
-			inset 0 0 0 8px rgba(255,255,255,0.6);
-		transition:all 0.5s ease-in-out;
+	box-shadow: inset 0 0 0 8px rgba(255,255,255,0.6);
+	transition:all 0.5s ease-in-out;
   opacity: 0;
+}
+.circle.open {
+  left:10px;
 }
 
 .circle-content{
@@ -108,7 +110,33 @@ nav li a {
   text-align: center;
 }
 
+/* avatar */
+.avatar {
+  height: 90px;
+  width: 90px;
+  position: relative;
+  display: inline-block;
+  background-color: rgb(220,220,220);
+  border-radius: 50%;
+  left: -100px;
+  transition: all 0.5s ease-in-out;
+  opacity:0;
+  border: 15px solid #8C7EA0;
+}
 
+.avatar.visible {
+  left: 0;
+  opacity: 1.0;
+}
+.avatar:hover {
+  -webkit-transform:scale(1.15); /* Safari and Chrome */
+  -moz-transform:scale(1.15); /* Firefox */
+  -ms-transform:scale(1.15); /* IE 9 */
+  -o-transform:scale(1.15); /* Opera */
+  transform:scale(1.15);
+}
+
+/* float */
 .pull-right {
   float: right;
 }
@@ -116,7 +144,8 @@ nav li a {
   float: left;
 }
 
-/*colors */
+
+/* colors */
 .violet {
   background-color: #3f2860;
 }
